@@ -27,12 +27,6 @@ public class Main {
         //team.addPlayer(bp);
         team.addPlayer(sp);
 
-
-
-
-
-
-
     }
 
     private static void printDouble(ArrayList<Integer> items){
