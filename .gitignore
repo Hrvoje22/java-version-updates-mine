@@ -1,4 +1,4 @@
 /java-version-updates-mine.iml
 .idea
 out
-
+/m1-generics/target/
