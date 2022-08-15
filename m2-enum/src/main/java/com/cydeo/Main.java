@@ -41,6 +41,14 @@ public class Main {
         calculate(3,5,Operation.PLUS);
 
 
+        System.out.println("------------------------------------------");
+
+        System.out.println("How to retrieve the constant value");
+        System.out.println(Currency.PENNY.getValue());
+        System.out.println(Currency.QUARTER.getValue());
+        System.out.println(Currency.DIME.ordinal());
+
+
     }
 
     private static void calculate(double x, double y, Operation operation){
