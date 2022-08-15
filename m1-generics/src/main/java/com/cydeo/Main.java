@@ -16,6 +16,21 @@ public class Main {
 
         printDouble(items);
 
+        System.out.println("-------------------------------------------");
+
+        FootballPlayer fp = new FootballPlayer("Joe");
+        BaseballPlayer bp = new BaseballPlayer("Pat");
+        SoccerPlayer sp = new SoccerPlayer("David");
+
+        Team<SoccerPlayer> team = new Team("Liverpool");
+        //team.addPlayer(fp);
+        //team.addPlayer(bp);
+        team.addPlayer(sp);
+
+
+
+
+
 
 
     }
