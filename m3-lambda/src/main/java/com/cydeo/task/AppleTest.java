@@ -13,6 +13,11 @@ public class AppleTest {
         inventory.add(new Apple(200,Color.GREEN));
         inventory.add(new Apple(50,Color.RED));
 
+        List<Apple> heavyApple = filterApples(inventory,new AppleHeavyPredicate());
+        System.out.println(heavyApple);
+        List<Apple> greenApple = filterApples(inventory,new AppleGreenColorPredicate());
+        System.out.println(greenApple);
+
 
 
     }
