@@ -15,6 +15,14 @@ public class ArraySorting {
         as.sort(qs);
         as.sort(bs);
 
+        //lambda
+
+        Sorting quickSort = () -> System.out.println("Quick Sorting");
+        as.sort(quickSort);
+
+        as.sort(() -> System.out.println("Quick Sorting"));
+
+        //with this we skipped usage of BubbleSort & QuickSort class
 
     }
 
