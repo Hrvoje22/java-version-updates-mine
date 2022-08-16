@@ -30,6 +30,15 @@ public class OrangeTest {
 
         prettyPrintOrange(inventory,orange -> "An orange of " + orange.getWeight() + "g");
 
+        System.out.println("--------------------------------------------------------");
+
+
+        OrangeFormatter fancyFormatter = orange -> {
+            String ch = orange.getWeight()>200?"Heavy":"Light";
+            return "A " + ch + " " + orange.getColor() + " orange";
+        };
+
+        prettyPrintOrange(inventory,fancyFormatter);
 
 
     }
