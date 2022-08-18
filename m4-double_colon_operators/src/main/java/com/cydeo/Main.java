@@ -1,5 +1,7 @@
 package com.cydeo;
 
+import java.util.function.BiFunction;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class Main {
@@ -16,8 +18,33 @@ public class Main {
         Calculate s1 = (x,y) -> Calculator.findSum(x,y);
 
         //double colon
+        //reference to a static method
 
-        Calculate s2 = Calculator::findSum; //static
+        Calculate s2 = Calculator::findSum;
+        s2.calculate(10,20);
+
+        //reference to an instance method
+
+        Calculator obj = new Calculator();
+        Calculate s3 = obj::findMultiply;
+        // or Calculate s4 = new Calculator() :: findMultiply;
+
+        System.out.println("----------------------------------");
+
+        BiFunction<String,Integer,String> fun = (str,i) -> str.substring(i);
+        //implementation is coming from a method of String class
+
+
+        BiFunction<String,Integer,String> fun2 = String::substring;
+        //here substring is not static, but we still called it by the class name - str is object, already defined
+
+        System.out.println("------------------------------------");
+
+        Function<Integer,Double> b = new MyClass()::method;
+        BiFunction<MyClass,Integer,Double> b1 = MyClass::method;
+
+
+
 
 
 
