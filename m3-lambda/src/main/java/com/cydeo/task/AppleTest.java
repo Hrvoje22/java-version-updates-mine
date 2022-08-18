@@ -21,6 +21,8 @@ public class AppleTest {
         List<Apple> greenApple = filterApples(inventory,new AppleGreenColorPredicate());
         System.out.println(greenApple);
 
+        System.out.println("-----------------------");
+
 
         //lambda
 
