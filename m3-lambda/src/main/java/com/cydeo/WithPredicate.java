@@ -23,7 +23,7 @@ public class WithPredicate {
 
     }
 
-    private static List<Apple> print(List<Apple> list,Predicate a){
+    private static List<Apple> print(List<Apple> list,Predicate<Apple> a){
 
         List<Apple> result = new ArrayList<>();
 
