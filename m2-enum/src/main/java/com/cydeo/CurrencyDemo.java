@@ -2,6 +2,7 @@ package com.cydeo;
 
 public class CurrencyDemo {
 
+    //without ENUM
 
     public static final CurrencyDemo PENNY = new CurrencyDemo();
     public static final CurrencyDemo NICKLE = new CurrencyDemo();
