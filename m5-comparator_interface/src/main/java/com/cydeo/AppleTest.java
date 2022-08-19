@@ -33,7 +33,7 @@ public class AppleTest {
 
         //CHAINING METHODS
 
-        inventory.sort(comparing(Apple::getWeight).reversed().thenComparing(Apple::getColor));
+        inventory.sort(comparing(Apple::getWeight).thenComparing(Apple::getColor));
         System.out.println(inventory);
 
     }
