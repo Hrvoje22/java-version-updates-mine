@@ -1,5 +1,7 @@
 package com.cydeo.task.task2;
 
+import java.util.Comparator;
+
 public class DishTest {
 
     public static void main(String[] args) {
@@ -38,6 +40,7 @@ public class DishTest {
 
         DishData.getAll().stream()
                 .filter(dish -> dish.getCalories()>300)
+                .map(Dish::getName)
                 .limit(3)
                 .forEach(System.out::println);
 
@@ -47,9 +50,14 @@ public class DishTest {
 
         DishData.getAll().stream()
                 .filter(dish -> dish.getCalories()<400)
+                .sorted(Comparator.comparing(Dish::getCalories).reversed())
                 .map(Dish::getName)
-                .sorted((o1,o2)->o1.compareTo(o2))
                 .forEach(System.out::println);
+
+        //map goes after sorted because we wouldn't be able to sort by calories if we only have Names!
+        //with a container too. Stream<String> because we are getting a String getName
+
+
 
 
 
