@@ -8,6 +8,8 @@ public class DishTest {
 
         DishData.getAll().stream()
                 .filter(dish->dish.getCalories()<400)
+                //.map(dish-> dish.getName())
+                .map(Dish::getName)
                 .forEach(System.out::println);
 
         System.out.println("---------------------------");
@@ -17,6 +19,18 @@ public class DishTest {
         DishData.getAll().stream()
                 .map(dish->dish.getName().length())
                 .forEach(System.out::println);
+        
+        /* OR
+        DishData.getAll().stream()
+        .map(Dish::getName)
+        .map(String::length)
+        .forEach(System.out::println);
+
+        DishData.getAll().stream()
+                .forEach(dish -> System.out.println(dish.getName().length()));
+
+         */
+
 
         System.out.println("---------------------------");
 
