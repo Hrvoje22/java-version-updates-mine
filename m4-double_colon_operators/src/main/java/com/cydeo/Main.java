@@ -34,6 +34,7 @@ public class Main {
 
         BiFunction<String,Integer,String> fun = (str,i) -> str.substring(i);
         //implementation is coming from a method of String class
+        System.out.println(fun.apply("String", 5));
 
 
         BiFunction<String,Integer,String> fun2 = String::substring;
