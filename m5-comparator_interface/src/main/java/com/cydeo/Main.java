@@ -11,6 +11,7 @@ public class Main {
         List<Integer> list = Arrays.asList(10,0,15,5,20);
         System.out.println(list);
 
+        //Behavior Parameterization
         //Ascending
         Collections.sort(list);
         System.out.println(list);
@@ -19,7 +20,7 @@ public class Main {
         Collections.sort(list, new MyComparator());
         System.out.println(list);
 
-        //or
+        //or w Lambda
 
         Collections.sort(list,((o1,o2) -> (o1>o2)?-1 : (o1<o2)?1 : 0));
         System.out.println(list);
