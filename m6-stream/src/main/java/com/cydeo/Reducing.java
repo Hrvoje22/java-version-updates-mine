@@ -1,9 +1,10 @@
-package com.cydeo.task;
+package com.cydeo;
 
 
 import com.cydeo.task.task2.Dish;
 import com.cydeo.task.task2.DishData;
 
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -55,8 +56,12 @@ public class Reducing {
         System.out.println("Max: " + max.get());
         System.out.println("Sum: " + sum1.get());
 
+        System.out.println("-------------------------------");
 
 
+        System.out.println("Count");
+        long dishCount = DishData.getAll().stream().count();
+        System.out.println(dishCount);
 
 
 
