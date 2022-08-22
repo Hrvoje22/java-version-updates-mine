@@ -19,6 +19,11 @@ public class BigDecimalDemo {
         BigDecimal b4 = BigDecimal.valueOf(374.26);
         System.out.println(b3.subtract(b4));
 
+        BigDecimal b5 = BigDecimal.TEN;
+        System.out.println(b1.add(BigDecimal.TEN));
+        System.out.println(b1.multiply(new BigDecimal("15.56")));
+        System.out.println(b1.multiply(BigDecimal.valueOf(15.56)));
+
 
 
 
