@@ -6,6 +6,8 @@ public class FactoryMethodDemo {
 
     public static void main(String[] args) {
 
+
+        //READ ONLY, CAN'T EDIT
         //Creating unmodifiable List before Java9
 
         List<String> course = Collections.unmodifiableList(Arrays.asList("Java","Spring","Agile"));
@@ -27,6 +29,8 @@ public class FactoryMethodDemo {
                 Map.entry("PSP",1),
                 Map.entry("Chair",5)
         );
+
+
 
 
 
