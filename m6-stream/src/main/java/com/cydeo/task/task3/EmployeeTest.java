@@ -21,7 +21,7 @@ public class EmployeeTest {
                 .flatMap(employee -> employee.getEmployeePhoneNumbers().stream())
                 .forEach(System.out::println);
 
-        System.out.println("Print All Phone Numbers with Double Color");
+        System.out.println("Print All Phone Numbers with Double Colon");
 
         EmployeeData.readAll()
                 .map(Employee::getEmployeePhoneNumbers)

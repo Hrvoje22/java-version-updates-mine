@@ -2,6 +2,6 @@ package com.cydeo;
 
 public enum Color {
 
-   RED, GREEN
+   GREEN,RED //will sort by colors in this way, not alphabetical
 
 }
