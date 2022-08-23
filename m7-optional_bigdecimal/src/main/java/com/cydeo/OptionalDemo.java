@@ -1,6 +1,6 @@
 package com.cydeo;
 
-import com.cydeo.java9.FactoryMethodDemo;
+//import com.cydeo.java9.FactoryMethodDemo;
 
 import java.util.Arrays;
 import java.util.List;
@@ -46,7 +46,7 @@ public class OptionalDemo {
         //example with modules
         //accessing only java9 packages from m8 module
 
-        FactoryMethodDemo f1 = new FactoryMethodDemo();
+        //FactoryMethodDemo f1 = new FactoryMethodDemo();
 
 
 

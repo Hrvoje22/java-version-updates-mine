@@ -1,3 +1,3 @@
-module moduleJava8 {
-    requires moduleJava9; //add dependencies
+module module7 {
+    requires module8; //add dependencies
 }

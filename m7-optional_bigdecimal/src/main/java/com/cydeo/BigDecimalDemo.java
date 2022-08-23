@@ -32,7 +32,7 @@ public class BigDecimalDemo {
         System.out.println(number1.setScale(1, RoundingMode.CEILING));
         System.out.println(number1.setScale(1, RoundingMode.FLOOR));
         System.out.println(number1.setScale(2, RoundingMode.CEILING));
-        System.out.println(number1.setScale(2, RoundingMode.FLOOR));
+        System.out.println(number1.setScale(3, RoundingMode.FLOOR));
 
         //We can't use equals() method
         //We can use compareTo() for BigDecimals
