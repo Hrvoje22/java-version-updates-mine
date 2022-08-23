@@ -1,5 +1,7 @@
 package com.cydeo;
 
+import com.cydeo.java9.FactoryMethodDemo;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
@@ -38,6 +40,14 @@ public class OptionalDemo {
         //orElse
 
         System.out.println(bigNumber.orElse(5));
+
+        System.out.println("--------------------------------");
+
+        //example with modules
+        //accessing only java9 packages from m8 module
+
+        FactoryMethodDemo f1 = new FactoryMethodDemo();
+
 
 
 
