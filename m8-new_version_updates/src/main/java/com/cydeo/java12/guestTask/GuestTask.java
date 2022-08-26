@@ -18,9 +18,9 @@ public class GuestTask {
                                 // first collector, we select only who confirmed the participation
                                 Collectors.filtering(Guest::isParticipating,
                                         // whe want to collect only the first name in a list
-                                        Collectors.mapping(o -> o.getName(), Collectors.toList())),
+                                        Collectors.mapping(Guest::getName, Collectors.toList())),
                                 // second collector, we want the total number of participants
-                                Collectors.filtering(guest-> guest.isParticipating(),Collectors.summingInt(Guest::getParticipantsNumber)),
+                                Collectors.filtering(Guest::isParticipating,Collectors.summingInt(Guest::getParticipantsNumber)),
 
                                 // we merge the collectors in a new Object,
                                 // the values are implicitly passed
