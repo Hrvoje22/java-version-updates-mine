@@ -43,14 +43,6 @@ public class BigDecimalDemo {
         System.out.println(new BigDecimal("1").compareTo(new BigDecimal("2")));
 
 
-
-
-
-
-
-
-
-
     }
 
 
